@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env.local src/1-intro-first-contact/index.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^3.0.92",
+    "ai": "^7.0.172"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
