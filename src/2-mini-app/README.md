@@ -47,3 +47,22 @@ MAX_TOKENS=256
 - The app prints the finish reason and token consumption.
 - If the model is cut by the token limit, it prints a warning.
 - Optional parameters like `--task`, `--model`, `--max-tokens`, and `--temperature` are supported.
+
+
+## Execution screenshots
+
+1. Text passed as an argument:
+
+   ![Text passed as an argument](./deliverables/1.text-as-argument.png)
+
+2. Text read from a file:
+
+   ![Text read from a file](./deliverables/2.file-stdin.png)
+
+3. Usage help shown when no text is provided:
+
+   ![No text shows usage help](./deliverables/3.no-text-shows-help.png)
+
+4. Response truncated at the token limit:
+
+   ![Response truncated at the token limit](./deliverables/4.max-tokens-limit.png)
