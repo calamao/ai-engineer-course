@@ -1,0 +1,1 @@
+A customer reports that the mobile app crashes immediately after login on iOS 17.5. The issue started after the latest update and affects all accounts.

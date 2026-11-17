@@ -1,0 +1,1 @@
+Los tickets de cliente se están incrementando después de la release de la nueva página de facturación
