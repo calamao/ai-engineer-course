@@ -4,6 +4,8 @@
 dist
 package-lock.json
 yarn.lock
+source-export/
+source-export.zip
 
 # Created by https://www.gitignore.io/api/node,macos
 
