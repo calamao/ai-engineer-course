@@ -2,7 +2,8 @@
   "type": "module",
   "scripts": {
     "practice-1": "node src/1-intro-first-contact/index.ts",
-    "practice-2": "tsx src/2-mini-app/miniApp.ts"
+    "practice-2": "tsx src/2-mini-app/miniApp.ts",
+    "practice-3": "tsx src/3-laboratorio-3/index.ts"
   },
   "dependencies": {
     "@ai-sdk/openai-compatible": "^3.0.92",
@@ -12,6 +13,7 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "prettier": "^3.10.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },

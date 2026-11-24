@@ -66,3 +66,7 @@ MAX_TOKENS=256
 4. Response truncated at the token limit:
 
    ![Response truncated at the token limit](./deliverables/4.max-tokens-limit.png)
+
+## Analysis and test results
+
+For the execution table and the analysis of token usage, variability, and model trade-offs, see [analisis.md](./analisis.md).
