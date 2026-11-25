@@ -1,2 +1,7 @@
-Qué tuviste que cambiar en el resto del cliente al añadir el adaptador de Anthropic. Si cambió algo más que el adaptador y la configuración, ¿qué mejorarías del contrato?
-Por qué un 400 no debe activar el fallback.
+1. Qué tuviste que cambiar en el resto del cliente al añadir el adaptador de Anthropic. Si cambió algo más que el adaptador y la configuración, ¿qué mejorarías del contrato?
+
+No tuve que cambiar nada más que añadir nueva configuración y el nuevo adaptador.
+
+2. Por qué un 400 no debe activar el fallback.
+
+Es un error de petición (formato de la petición posiblemente) y debería fallar en todos los modelos. Intentar otros modelos sólo consumiría tiempo y puede que cuota.
