@@ -10,7 +10,9 @@ const MAX_TOKENS = Number(process.env.MAX_TOKENS ?? 256);
 function loadConfig(): LabConfig {
   const config = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf8")) as LabConfig;
   if (!config.logical_models || !config.destinations) {
-    throw new Error("Invalid config.json: logical_models and destinations are required.");
+    throw new Error(
+      "Invalid config.json: logical_models and destinations are required.",
+    );
   }
   return config;
 }
@@ -34,8 +36,12 @@ async function runWithFallback(
   for (const target of destinations) {
     const destination = config.destinations[target.destination];
     if (!destination) {
-      lastError = new Error(`Missing destination configuration "${target.destination}".`);
-      console.error(`[fallback] ${target.destination}: ${errorMessage(lastError)}`);
+      lastError = new Error(
+        `Missing destination configuration "${target.destination}".`,
+      );
+      console.error(
+        `[fallback] ${target.destination}: ${errorMessage(lastError)}`,
+      );
       continue;
     }
 
@@ -80,7 +86,12 @@ async function main(): Promise<void> {
 
   try {
     const config = loadConfig();
-    const result = await runWithFallback(logicalModel, config, text, systemMessage);
+    const result = await runWithFallback(
+      logicalModel,
+      config,
+      text,
+      systemMessage,
+    );
 
     console.log("\nResult:\n" + result.text);
     console.log("\n----------------------------------------");
