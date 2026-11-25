@@ -3,10 +3,12 @@
   "scripts": {
     "practice-1": "node src/1-intro-first-contact/index.ts",
     "practice-2": "tsx src/2-mini-app/miniApp.ts",
-    "practice-3": "tsx src/3-laboratorio-3/index.ts"
+    "practice-3": "tsx src/3-laboratorio-3/index.ts",
+    "practice-4": "tsx src/4-laboratorio-4/index.ts"
   },
   "dependencies": {
     "@ai-sdk/openai-compatible": "^3.0.92",
+    "@anthropic-ai/sdk": "^1.14.0",
     "ai": "^7.0.172",
     "dotenv": "^18.0.10",
     "openai": "^7.56.0"
